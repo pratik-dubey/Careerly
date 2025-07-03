@@ -42,12 +42,12 @@ const items = [
   },
   {
     title: "Billing",
-    url: "#",
+    url: "/billing",
     icon: Wallet,
   },
   {
     title: "Profile",
-    url: "#",
+    url: "/profile",
     icon: UserCircle,
   },
 ];
