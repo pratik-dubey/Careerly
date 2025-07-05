@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const items = [
   {
@@ -58,13 +59,15 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         <div className="p-4">
-          <Image
-            src="/cr.png"
-            alt="logo"
-            width={90}
-            height={60}
-            className="w-full"
-          />
+          <Link href={"/"}>
+            <Image
+              src="/cr.png"
+              alt="logo"
+              width={90}
+              height={60}
+              className="w-full"
+            />
+          </Link>
 
           <h2 className="text-sm text-gray-400 mt-3 text-center">
             Build Your Dream Career

@@ -4,9 +4,10 @@ const aitoolsList = [
   {
     name: "Career chat",
     desc: "Burst your doubt bubbles",
-    path: "/ai-career-chat",
+    path: "/ai-tools/ai-chat",
     button: "Ask now",
     icon: "/chat.png",
+    color: "teal",
   },
   {
     name: "AI Resume Analyzer",
@@ -14,6 +15,7 @@ const aitoolsList = [
     path: "/ai-resume-analyzer",
     button: "Analyze",
     icon: "/ats.png",
+    color: "yellow",
   },
   {
     name: "Learning Roadmap",
@@ -21,6 +23,7 @@ const aitoolsList = [
     path: "/career-roadmap-generator",
     button: "Generate",
     icon: "/roadmap.png",
+    color: "blue",
   },
   {
     name: "Cover Letter Generator",
@@ -28,6 +31,7 @@ const aitoolsList = [
     path: "/cover-letter-generator",
     button: "Create",
     icon: "/cover-letter.png",
+    color: "green",
   },
 ];
 
@@ -38,7 +42,7 @@ const AiTools = () => {
       <p>Start building and shape your career with exclusive AI tools</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-5">
-        {aitoolsList.map((tool: any, index) => (
+        {aitoolsList.map((tool, index) => (
           <AiToolCard tool={tool} key={index} />
         ))}
       </div>
